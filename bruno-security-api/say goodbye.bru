@@ -1,0 +1,21 @@
+meta {
+  name: say goodbye
+  type: http
+  seq: 2
+}
+
+get {
+  url: http://localhost:8080/goodbye
+  body: none
+  auth: basic
+}
+
+auth:basic {
+  username: user
+  password: password
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
